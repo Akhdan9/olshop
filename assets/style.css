@@ -1,0 +1,153 @@
+*, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1f2160;
+}
+@media (max-width:700px){
+    p{
+        text-align:center;
+        font-size:10px;
+        color:purple;
+    }
+}
+
+@media (max-width: 1000px) {
+    p{
+        text-align:center;
+        font-size:10px;
+        color:darkred;
+    }
+}
+
+  /* navbar */ 
+nav{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: -1px -7px 20 px 0px #888;
+}
+nav ul{
+    position: relative;
+    top: 20px;
+    margin : 0;
+    float: right;
+    right: 10%;
+}
+nav ul li{
+    float: left;
+    display: block;
+    margin: 0px 15px 0px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #888;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    color: #55a8fd;
+}
+
+.menu-mobile{
+    position: relative;
+    float: right;
+    display: none;
+}
+.menu-mobile a{
+    color: #888;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #888;
+}
+
+/* form */
+section#input-form{
+    position: relative;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 60px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 0 7px 0px rgba(136, 146, 146, 0.2);
+    padding: 100px;
+}
+
+#input-form .form{
+    width: 100%;
+    display: grid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+label{
+    font-family: 'Helevetica', sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+input{
+    font-family: 'Helevetica', sans-serif;
+    padding: 10px 20px 10px 20px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #8888;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+section.sec1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/CI/assets/BG.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content{
+    margin-top: 80px;
+}
+
+.content p {
+    width: 900px;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+    letter-spacing: 30px;
+    font-weight: 100;
+    color: white;
+    font-family: Arial; 
+}
+
+#demo {
+    font-weight: lighter;
+    word-spacing: 20px;
+}
+
+hr{
+    margin: auto;
+    width: 80%;
+    border: 1.5px solid #fff
+}

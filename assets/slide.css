@@ -1,0 +1,129 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0px;
+}
+
+slider {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+    
+}
+
+slider > * {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
+}
+
+slide:nth-child(1){
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(BG1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(2){
+    left: 0%;
+    animation-delay: 2s;
+    background-image: url(BG2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(3){
+    animation-delay: 5s;
+    background-image: url(BG3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(4){
+    left: 0%;
+    animation-delay: 8s;
+    background-image: url(BG4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+slide p{
+    font-family: comfortaa;
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 340px;
+    color: #fff;
+}
+
+@keyframes slide{
+    0% {left: 100%; width: 100%;}
+    5% {left:0%;}
+    25% { left: 0%;}
+    30% { left: -100%; width: 100%;}
+    30.0001% { left: -100%; width: 0%;}
+    100% { left: 100%; width: 0%; }
+    }
+
+.bounce {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 80px;
+    background: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bounce::before{
+    content: '';
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: #188FA7;
+    border-radius: 50%;
+    box-shadow: inset 0 -10px rgba(0, 0, 0, 0, 1);
+    animation: bounce.75s infinite linear;
+}
+
+.bounce::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0, 1);
+    border-radius: 50%;
+    transform: scale(1,.25);
+    animation: bounceshadow .75s infinite linear;
+}
+
+@keyframes bounce{
+    0% { transform: translate(0, -50%) scale(1, .8);}
+    30% { transform: translate(0, -250%) scale(.8, 1);}
+    60% { transform: translate(0, -300%) scale(1, .8);}
+    85% { transform: translate(0, -50%) scale(1, .8);}
+    89% { transform: translate(0, -50%) scale(1, .8);}
+    95%,100% { transform: translate(0, -50%) scale(1, .8);}
+}
+
+@keyframes bounceshadow{
+    0% {transform: scale(1,0.25);}
+    30% {transform: scale(1.5,0.25);}
+    60% {transform: scale(2,0.25);}
+    85% {transform: scale(1,0.25);}
+    90% {transform: scale(1,0.25);}
+    100% {transform: scale(1,0.25);}
+}
